@@ -7,8 +7,9 @@ print('Languages: ', translate.langs)
 print('Translate directions: ',translate.directions)
 print('Detect language: ', translate.detect('hola'))
 """
-print(pytesseract.image_to_string(Image.open('wifi.png')))
+print(pytesseract.image_to_string(Image.open('halp.png')))
 
-text = pytesseract.image_to_string(Image.open('wifi.png'))
+text = pytesseract.image_to_string(Image.open('halp.png'))
 
-print('Translate: ', translate.translate(text, 'en-es'))
+translation =  translate.translate(text, 'en-fr')
+print(translation)
